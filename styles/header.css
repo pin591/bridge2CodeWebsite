@@ -1,0 +1,14 @@
+.logo-text {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    margin: 0 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #979797;
+}
