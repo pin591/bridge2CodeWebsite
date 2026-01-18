@@ -1,15 +1,36 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(
+        145deg,
+        #376cc7 0%,
+        #2b5294 30%,
+        #223e75 100%
+    );
+}
+
 .logo-text {
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.nav-link {
-    margin: 0 10px;
+.nav-button,
+.nav-button-active {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
 }
 
-.nav-link:hover,
-.nav-link.active {
-    color: #979797;
+.nav-button-active {
+    background-color: white;
+    padding: 8px;
+    color: black;
+    border-radius: 6px;
+}
+
+.nav-button:hover {
+    color: #a1a1a1;
 }
 
