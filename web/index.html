@@ -51,34 +51,37 @@
         </section>
         
         <section>
-            <form class="row g-3 mt-3">
-
+            <form class="g-3 mt-3" method="post">
                 <h2 class="text-white a">Deja aqui tu mensaje</h2>
+                <div class="row my-1">
+                    <div class="col-6 text-white">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
 
-                <div class="col-6 text-white">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+                    <div class="col-6 text-white">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Escribe tu email" required>
+                    </div>
                 </div>
-
-                <div class="col-6 text-white">
-                    <label for="inputEmail" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="inputEmail" placeholder="Escribe tu email">
+                <div class="row my-1">
+                    <div class="col-6 text-white">
+                        <label for="inputPhone" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="inputPhone" placeholder="Escribe tu número de teléfono" required>
+                    </div>
                 </div>
-
-                <div class="col-6 text-white">
-                    <label for="inputPhone" class="form-label">Teléfono</label>
-                    <input type="number" class="form-control" id="inputPhone" placeholder="Escribe tu número de teléfono">
+                <div class="row my-1">
+                    <div class="col-12 text-white">
+                        <label for="inputMessage" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="inputMessage" placeholder="Escribe un mensaje de texto" required></textarea>
+                    </div>
                 </div>
-
-                <div class="col-12 text-white">
-                    <label for="inputMessage" class="form-label">Mensaje</label>
-                    <input type="text" class="form-control" id="inputMessage" placeholder="Escribe un mensaje de texto">
-                </div>
-
-                <div class="col-12 text-center">
-                    <button type="submit" class="btn btn-primary">
-                        Enviar
-                    </button>
+                <div class="row my-4">
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">
+                            Enviar
+                        </button>
+                    </div>
                 </div>
             </form>
         </section>
