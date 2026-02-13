@@ -4,48 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-     <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/contacto.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <section>
-                <form class="g-3 mt-3" method="post">
-                    <h2 class="text-white a">Deja aqui tu mensaje</h2>
-                    <div class="row my-1">
-                        <div class="col-6 text-white">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre" required>
-                        </div>
+  <form>
+        <h2>Formulario de Contacto</h2>
+        
+        <div class="form_input">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+        </div>
 
-                        <div class="col-6 text-white">
-                            <label for="inputEmail" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Escribe tu email" required>
-                        </div>
-                    </div>
-                    <div class="row my-1">
-                        <div class="col-6 text-white">
-                            <label for="inputPhone" class="form-label">Teléfono</label>
-                            <input type="tel" class="form-control" id="inputPhone" placeholder="Escribe tu número de teléfono" required>
-                        </div>
-                    </div>
-                    <div class="row my-1">
-                        <div class="col-12 text-white">
-                            <label for="inputMessage" class="form-label">Mensaje</label>
-                            <textarea class="form-control" id="inputMessage" placeholder="Escribe un mensaje de texto" required></textarea>
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <div class="col-12 text-center">
-                            <button type="submit" class="btn btn-primary">
-                                Enviar
-                            </button>
-                        </div>
-                    </div>
-                </form>
-        </section>
-    </div>
+        <div class="form_input">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+        </div>
+
+        <div class="form-input">
+            <label for="type-of-user">Nivel de informática</label>
+            <select name="type-of-user" id="type-of-user">
+                <option value="" disabled selected>Selecciona tu nivel</option>
+                <option value="user1">🌟 Principiante</option>
+                <option value="user2">🎯 Amateur</option>
+                <option value="user3">📚 Intermedio</option>
+                <option value="user4">💡 Avanzado</option>
+                <option value="user5">🚀 Profesional</option>
+            </select>
+        </div>
+
+        <div class="form_input">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="8" placeholder="Deja tu mensaje..."></textarea>
+        </div>
+
+        <div class="checkbox-group">
+            <label for="checkbox">Acepto los terminos y condiciones</label>
+            <input type="checkbox" class="checkbox">
+        </div>
+        
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
 </body>
 </html>
