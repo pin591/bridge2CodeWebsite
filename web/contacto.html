@@ -5,49 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </head>
 <body>
-  <form>
-        <h2>Formulario de Contacto</h2>
+    <div class="container">
+        <header>
+            <div class="d-flex align-items-center justify-content-between">
+                
+                <a href="index.html" class="d-flex align-items-center text-decoration-none">
+                    <img src="/resources/coder.png" alt="Logo Code2Bridge" width="150" height="150" class="me-2">
+                    <span class="logo-text">Code2Bridge</span>
+                </a>
+
+                <nav>
+                    <ul class="nav align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-button-active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-button" href="/web/curso.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-button" href="#">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-button" href="/web/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-button" href="#">Metodologia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-button" href="/web/equipo.html">Equipo</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="w-75 row">
+            <form>
+                <h2>Formulario de Contacto</h2>
+                
+                <div class="row">
+                    <div class="form_input">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Nombre completo" required>
+                    </div>
+
+                    <div class="form_input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+                    </div>
+                </div>
+                
+
+                <div class="form-input">
+                    <label for="type-of-user">Nivel de informática</label>
+                    <select name="type-of-user" id="type-of-user">
+                        <option value="" disabled selected>Selecciona tu nivel</option>
+                        <option value="user1">🌟 Principiante</option>
+                        <option value="user2">🎯 Amateur</option>
+                        <option value="user3">📚 Intermedio</option>
+                        <option value="user4">💡 Avanzado</option>
+                        <option value="user5">🚀 Profesional</option>
+                    </select>
+                </div>
+
+                <div class="form_input">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" rows="8" placeholder="Deja tu mensaje..."></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                    <label for="checkbox">Acepto los terminos y condiciones</label>
+                    <input type="checkbox" class="checkbox">
+                </div>
+                
+                <button class="w-25" type="submit">Enviar</button>
+            </form>
+        </section>
         
-        <div class="form_input">
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" placeholder="Nombre completo" required>
-        </div>
-
-        <div class="form_input">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
-        </div>
-
-        <div class="form-input">
-            <label for="type-of-user">Nivel de informática</label>
-            <select name="type-of-user" id="type-of-user">
-                <option value="" disabled selected>Selecciona tu nivel</option>
-                <option value="user1">🌟 Principiante</option>
-                <option value="user2">🎯 Amateur</option>
-                <option value="user3">📚 Intermedio</option>
-                <option value="user4">💡 Avanzado</option>
-                <option value="user5">🚀 Profesional</option>
-            </select>
-        </div>
-
-        <div class="form_input">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" rows="8" placeholder="Deja tu mensaje..."></textarea>
-        </div>
-
-        <div class="checkbox-group">
-            <label for="checkbox">Acepto los terminos y condiciones</label>
-            <input type="checkbox" class="checkbox">
-        </div>
-        
-        <button type="submit">Enviar</button>
-    </form>
-</body>
-</html>
+    </div>
 </body>
 </html>
