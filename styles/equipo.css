@@ -42,10 +42,14 @@ body {
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.4s ease;
+    border-bottom: 8px solid transparent;
+    border-image: linear-gradient(90deg, #43c737, #2f60b6, #00c3ff);
+    border-image-slice: 1;
 }
 
 .team-card:hover {
     transform: translateY(-10px);
+    border-bottom-width: 12px;
 }
 
 .team-card img {

@@ -14,6 +14,7 @@ body {
     font-size: 2rem;
     font-weight: 600;
 }
+
 nav, .nav {
     display: flex;
     align-items: center;
@@ -24,6 +25,73 @@ nav, .nav {
     margin-bottom: 0;
 }
 
+.img-diluida-container {
+    position: relative;
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-diluida-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.5s ease;
+    
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, 
+        black 50%, 
+        rgba(0,0,0,0.7) 70%, 
+        transparent 90%);
+    mask-image: radial-gradient(circle at 50% 50%, 
+        black 50%, 
+        rgba(0,0,0,0.7) 70%, 
+        transparent 90%);
+}
+
+.img-diluida-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        145deg,
+        rgba(67, 199, 55, 0.2) 0%,
+        rgba(47, 96, 182, 0.3) 50%,
+        rgba(34, 62, 117, 0.2) 100%
+    );
+    pointer-events: none;
+    mix-blend-mode: overlay;
+    border-radius: 20px;
+}
+
+.img-diluida-container:hover img {
+    transform: scale(1.05);
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, 
+        black 60%, 
+        rgba(0,0,0,0.8) 80%, 
+        transparent 95%);
+    mask-image: radial-gradient(circle at 50% 50%, 
+        black 60%, 
+        rgba(0,0,0,0.8) 80%, 
+        transparent 95%);
+}
+
+@media (max-width: 1200px) {
+    .img-diluida-container {
+        width: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .img-diluida-container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
 .nav-button,
 .nav-button-active {
     margin: 0 10px;
@@ -54,4 +122,82 @@ nav, .nav {
 
 .social-icons a:hover {
     color: #43c737;
+}
+
+.objetivos-card {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #e3e3e4;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+.objetivos-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.lista-objetivos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-objetivos li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lista-objetivos input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: default;
+}
+
+.metodologia-card {
+    display: inline-block;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.metodologia-card h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.metodologia-texto {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    max-width: 450px; 
+}
+
+.instructor-card {
+    display: inline-block;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.instructor-card h3 {
+    margin: 0 0 15px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.instructor-texto {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    max-width: 450px;
 }

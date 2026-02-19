@@ -10,7 +10,7 @@ body {
 }
 
 .blog-card {
-    background: white;
+    background: rgb(27, 22, 22);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -31,7 +31,7 @@ body {
 .blog-tag {
     display: inline-block;
     font-size: 14px;
-    color: #666;
+    color: #e9dfdf;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
@@ -40,7 +40,7 @@ body {
 .blog-content h3 {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #c2b8b8;
     margin-bottom: 15px;
     line-height: 1.4;
 }
