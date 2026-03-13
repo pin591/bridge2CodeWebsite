@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos</title>
-    <link rel="stylesheet" href="../styles/curso.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,7 +18,6 @@
         <div class="container">
             <header>
                 <div class="d-flex align-items-center justify-content-between">
-                    
                     <a href="index.html" class="d-flex align-items-center text-decoration-none">
                         <img src="/resources/coder.png" alt="Logo Code2Bridge" width="150" height="150" class="me-2">
                         <span class="logo-text">Code2Bridge</span>
@@ -33,7 +32,7 @@
                                 <a class="nav-button-active" href="/web/curso.html">Cursos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-button" href="#">Sobre Nosotros</a>
+                                <a class="nav-button" href="/web/sobrenosotros.html">Sobre Nosotros</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-button" href="/web/contacto.html">Contacto</a>
@@ -59,122 +58,106 @@
 
             <section class="blog-section py-5">
                 <h2 class="text-center text-white mb-4 parallax-title">Cursos</h2>
-                <div class="g-4">
-                    <div class="row my-4">
-                        <div class="col-md-6">
-                            <div class="blog-card parallax-card" data-speed="0.3">
-                                <div class="parallax-image-container">
-                                    <div class="blog-image parallax-image" style="background-image: url('/resources/pc.jpg')" data-speed="0.5"></div>
-                                </div>
-                                <div class="blog-content">
-                                    <span class="blog-tag">Trend In Design</span>
-                                    <h3>Proteje tu equipo de cyber ataques</h3>
-                                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="blog-card parallax-card curso-completo" data-speed="0.3">
+                            <div class="parallax-image-container">
+                                <div class="blog-image parallax-image" style="background-image: url('/resources/pc.jpg')" data-speed="0.5"></div>
+                            </div>
+                            <div class="blog-content">
+                                <span class="blog-tag">Trend In Design</span>
+                                <h3>Proteje tu equipo de cyber ataques</h3>
+                        
+                                <div class="course-list-container mt-4">
+                                    <div class="course-list-header" onclick="toggleCourseList(this)">
+                                        <h4 class="course-list-title">Cursos disponibles</h4>
+                                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                                    </div>
+                                    <ul class="course-list collapsed">
+                                        <li><i class="fas fa-code"></i> Desarrollo Web Full Stack</li>
+                                        <li><i class="fas fa-robot"></i> Inteligencia Artificial y Machine Learning</li>
+                                        <li><i class="fas fa-chart-line"></i> Marketing Digital Avanzado</li>
+                                        <li><i class="fas fa-paint-brush"></i> Diseño UX/UI Profesional</li>
+                                        <li><i class="fas fa-database"></i> Big Data y Analítica</li>
+                                        <li><i class="fas fa-cloud"></i> Cloud Computing (AWS, Azure, GCP)</li>
+                                        <li><i class="fas fa-mobile-alt"></i> Desarrollo de Apps Móviles</li>
+                                        <li><i class="fas fa-chart-pie"></i> Business Intelligence</li>
+                                        <li><i class="fas fa-shield-alt"></i> Ciberseguridad Avanzada</li>
+                                        <li><i class="fas fa-project-diagram"></i> Metodologías Ágiles (Scrum, Kanban)</li>
+                                        <li><i class="fab fa-python"></i> Python para Data Science</li>
+                                        <li><i class="fab fa-java"></i> Java Avanzado y Spring Boot</li>
+                                        <li><i class="fab fa-js"></i> JavaScript Moderno (React, Node.js)</li>
+                                        <li><i class="fas fa-cube"></i> Blockchain y Criptomonedas</li>
+                                        <li><i class="fas fa-vr-cardboard"></i> Realidad Virtual y Aumentada</li>
+                                        <li><i class="fas fa-microchip"></i> Internet de las Cosas (IoT)</li>
+                                        <li><i class="fas fa-palette"></i> Diseño Gráfico con Adobe Suite</li>
+                                        <li><i class="fas fa-tasks"></i> Gestión de Proyectos (PMP)</li>
+                                        <li><i class="fas fa-calculator"></i> Finanzas para Emprendedores</li>
+                                        <li><i class="fas fa-language"></i> Inglés Técnico para Programadores</li>
+                                    </ul>
+                                </div> 
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="course-list-container parallax-card" data-speed="0.2">
-                                <h4 class="course-list-title">Otros cursos disponibles</h4>
-                                <ul class="course-list">
-                                    <li><i class="fas fa-code"></i> Desarrollo Web Full Stack</li>
-                                    <li><i class="fas fa-robot"></i> Inteligencia Artificial y Machine Learning</li>
-                                    <li><i class="fas fa-chart-line"></i> Marketing Digital Avanzado</li>
-                                    <li><i class="fas fa-paint-brush"></i> Diseño UX/UI Profesional</li>
-                                    <li><i class="fas fa-database"></i> Big Data y Analítica</li>
-                                    <li><i class="fas fa-cloud"></i> Cloud Computing (AWS, Azure, GCP)</li>
-                                    <li><i class="fas fa-mobile-alt"></i> Desarrollo de Apps Móviles</li>
-                                    <li><i class="fas fa-chart-pie"></i> Business Intelligence</li>
-                                    <li><i class="fas fa-shield-alt"></i> Ciberseguridad Avanzada</li>
-                                    <li><i class="fas fa-project-diagram"></i> Metodologías Ágiles (Scrum, Kanban)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
-                    
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="blog-card parallax-card" data-speed="0.3">
-                                <div class="parallax-image-container">
-                                    <div class="blog-image parallax-image" style="background-image: url('/resources/pc2.jpg')" data-speed="0.5"></div>
-                                </div>
-                                <div class="blog-content">
-                                    <span class="blog-tag">Trend In Design</span>
-                                    <h3>Proteje tu equipo de cyber ataques</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="course-list-container parallax-card" data-speed="0.2">
-                                <h4 class="course-list-title">Cursos especializados</h4>
-                                <ul class="course-list">
-                                    <li><i class="fab fa-python"></i> Python para Data Science</li>
-                                    <li><i class="fab fa-java"></i> Java Avanzado y Spring Boot</li>
-                                    <li><i class="fab fa-js"></i> JavaScript Moderno (React, Node.js)</li>
-                                    <li><i class="fas fa-cube"></i> Blockchain y Criptomonedas</li>
-                                    <li><i class="fas fa-vr-cardboard"></i> Realidad Virtual y Aumentada</li>
-                                    <li><i class="fas fa-microchip"></i> Internet de las Cosas (IoT)</li>
-                                    <li><i class="fas fa-palette"></i> Diseño Gráfico con Adobe Suite</li>
-                                    <li><i class="fas fa-tasks"></i> Gestión de Proyectos (PMP)</li>
-                                    <li><i class="fas fa-calculator"></i> Finanzas para Emprendedores</li>
-                                    <li><i class="fas fa-language"></i> Inglés Técnico para Programadores</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div> 
-                </div> 
+                    </div>
+                </div>
             </section> 
-        </div> 
-    </div> 
-
+        </div>
+    </div>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const parallaxWrapper = document.querySelector('.parallax-wrapper');
-            const parallaxImages = document.querySelectorAll('.parallax-image');
-            const parallaxCards = document.querySelectorAll('.parallax-card');
+        
+        function toggleCourseList(header) {
+            var courseList = header.nextElementSibling;
             
-            window.addEventListener('scroll', function() {
-                const scrolled = window.pageYOffset;
-                if (parallaxWrapper) {
-                    parallaxWrapper.style.backgroundPositionY = (scrolled * 0.5) + 'px';
-                }
-                parallaxImages.forEach(image => {
-                    const speed = image.getAttribute('data-speed') || 0.5;
-                    const yPos = -(scrolled * speed);
-                    image.style.transform = `translateY(${yPos}px) scale(1.1)`;
-                });
-                parallaxCards.forEach((card, index) => {
-                    const speed = card.getAttribute('data-speed') || 0.2;
-                    const rect = card.getBoundingClientRect();
-                    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-                    
-                    if (isVisible) {
-                        const cardCenter = rect.top + rect.height / 2;
-                        const windowCenter = window.innerHeight / 2;
-                        const distance = cardCenter - windowCenter;
-                        const yOffset = distance * speed * 0.1;
-                        card.style.transform = `translateY(${yOffset}px)`;
-                    }
-                });
-            });
-            parallaxImages.forEach(image => {
-                image.addEventListener('mousemove', function(e) {
-                    const rect = this.getBoundingClientRect();
-                    const x = e.clientX - rect.left;
-                    const y = e.clientY - rect.top;
-                    const centerX = rect.width / 2;
-                    const centerY = rect.height / 2;
-                    const moveX = (x - centerX) * 0.05;
-                    const moveY = (y - centerY) * 0.05;
-                    
-                    this.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.1)`;
-                });
+            if (!courseList) {
+                alert("Error: No se encontró la lista");
+                return;
+            }
+            
+            if (courseList.classList.contains('collapsed')) {
+                courseList.classList.remove('collapsed');
+                header.classList.add('active');
+            } 
 
-                image.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translate(0, 0) scale(1)';
-                });
-            });
-        });
-    </script>
+            else {
+                courseList.classList.add('collapsed');
+                header.classList.remove('active');
+            }
             
+            var icon = header.querySelector('.dropdown-icon');
+            if (icon) {
+                if (header.classList.contains('active')) {
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            }
+            
+            console.log('Clic funcionando. Lista visible:', !courseList.classList.contains('collapsed'));
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var lists = document.querySelectorAll('.course-list');
+            for (var i = 0; i < lists.length; i++) {
+                lists[i].classList.add('collapsed');
+            }
+            
+            var headers = document.querySelectorAll('.course-list-header');
+            for (var i = 0; i < headers.length; i++) {
+                headers[i].classList.remove('active');
+                var icon = headers[i].querySelector('.dropdown-icon');
+                if (icon) {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            }
+            
+        });
+
+        var items = document.querySelectorAll('.course-list li');
+        for (var i = 0; i < items.length; i++) {
+            items[i].addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+        }
+    </script>
 </body>
 </html>
