@@ -459,6 +459,7 @@ button:hover {
 .course-list li i.fab.fa-js { color: #f7df1e; }
 
 /* ===== EQUIPO ===== */
+
 .team-section {
     padding: 10px 10%;
     text-align: center;
@@ -481,20 +482,20 @@ button:hover {
     display: flex;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
 .team-card {
-    position: relative;
     width: 320px;
     height: 420px;
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
     cursor: pointer;
     transition: transform 0.4s ease;
     border-bottom: 8px solid transparent;
     border-image: linear-gradient(90deg, #43c737, #2f60b6, #00c3ff);
     border-image-slice: 1;
+    background: #000; 
 }
 
 .team-card:hover {
@@ -502,10 +503,18 @@ button:hover {
     border-bottom-width: 12px;
 }
 
+.team-card .image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
 .team-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .overlay {
@@ -518,6 +527,7 @@ button:hover {
         rgba(0,0,0,0.95) 0%,
         rgba(0,0,0,0.7) 40%,
         rgba(0,0,0,0) 100%);
+    box-sizing: border-box;
 }
 
 .overlay h3 {
@@ -527,12 +537,13 @@ button:hover {
     border-radius: 8px;
     color: #ffffff;
     font-size: 20px;
+    margin: 0 0 5px 0;
 }
 
 .overlay p {
     font-size: 14px;
     color: #ccc;
-    margin: 5px 0 15px;
+    margin: 0 0 15px 0;
 }
 
 /* ===== LOGIN ===== */
@@ -968,6 +979,221 @@ button:hover {
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.6);
 }
+
+
+.meto-wrapper {
+    padding: 60px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+        
+      
+.meto-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+        
+.meto-header h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+        
+.meto-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.3rem;
+}
+        
+.meto-header .meto-badge {
+    display: inline-block;
+    background: rgba(67, 199, 55, 0.2);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: #43c737;
+    margin-bottom: 20px;
+    border: 1px solid rgba(67, 199, 55, 0.3);
+}
+        
+        
+.meto-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 35px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+        
+.meto-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+        
+.meto-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(67, 199, 55, 0.3);
+    padding-bottom: 15px;
+}
+        
+.meto-card-icon {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, #43c737, #2f60b6);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+}
+        
+.meto-card-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #1e2f4d;
+    font-weight: 700;
+}
+        
+.meto-card-content {
+    color: #2c3e50;
+    line-height: 1.7;
+}
+        
+ .meto-highlight {
+    background: linear-gradient(135deg, rgba(67, 199, 55, 0.1), rgba(47, 96, 182, 0.1));
+    padding: 20px;
+    border-radius: 16px;
+    margin: 20px 0;
+    border-left: 4px solid #43c737;
+}
+        
+        
+.meto-phases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+        
+.meto-phase-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(67, 199, 55, 0.2);
+}
+        
+.meto-phase-card:hover {
+    transform: translateY(-8px);
+    background: white;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: #43c737;
+}
+        
+.meto-phase-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #43c737, #2f60b6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+        
+.meto-phase-card h3 {
+    color: #1e2f4d;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+        
+.meto-phase-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+        
+        
+.meto-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+        
+.meto-resource-item {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+        
+.meto-resource-item:hover {
+    background: white;
+    transform: translateX(5px);
+    border-color: rgba(67, 199, 55, 0.5);
+}
+        
+.meto-resource-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(67, 199, 55, 0.15);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #43c737;
+    flex-shrink: 0;
+}
+        
+.meto-resource-text h4 {
+    color: #1e2f4d;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+        
+.meto-resource-text p {
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0;
+}
+        
+        
+.meto-check-list {
+    list-style: none;
+    padding: 0;
+}
+        
+.meto-check-list li {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+        
+.meto-check-list li i {
+    color: #43c737;
+    font-size: 18px;
+    width: 24px;
+}
+
 
 
 @keyframes fadeIn {
