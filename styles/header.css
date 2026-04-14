@@ -271,76 +271,151 @@ nav, .nav {
     margin-right: 5px;
 }
 
-/* ===== TARJETAS DE CONTENIDO (OBJETIVOS, METODOLOGÍA, INSTRUCTOR) ===== */
-.objetivos-card,
-.metodologia-card,
-.instructor-card {
+/* ========== ROADMAP / HOJA DE RUTA ========== */
+.roadmap-section {
+    padding: 50px 0 30px;
+}
+
+.roadmap-badge {
     display: inline-block;
-    vertical-align: top; 
-    padding: 25px 25px;
-    min-width: 250px;
-    background-color: rgba(255, 255, 255, 0.85); 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px); 
-    transition: all 0.3s ease;
-}
-
-.objetivos-card:hover,
-.metodologia-card:hover,
-.instructor-card:hover {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-    transform: translateY(-3px); 
-    border-color: rgba(255, 255, 255, 0.6);
-}
-
-.objetivos-card h3,
-.metodologia-card h3,
-.instructor-card h3 {
-    margin-top: 0;
-    margin-bottom: 20px; 
-    color: #1e2f4d; 
-    font-size: 1.4em; 
+    background: rgba(67, 199, 55, 0.2);
+    backdrop-filter: blur(4px);
+    padding: 6px 16px;
+    border-radius: 30px;
+    font-size: 0.8rem;
     font-weight: 600;
-    border-bottom: 2px solid rgba(67, 199, 55, 0.5); 
-    padding-bottom: 8px;
+    color: #43c737;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(67, 199, 55, 0.4);
 }
 
-.lista-objetivos {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.roadmap-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.lista-objetivos li {
-    margin: 12px 0; 
+.roadmap-subtitle {
+    color: rgba(255,255,255,0.85);
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+}
+
+.roadmap-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.timeline-badge {
+    min-width: 80px;
+    background: linear-gradient(135deg, #43c737, #2a5a1f);
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.timeline-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border-radius: 24px;
+    padding: 20px 25px;
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.timeline-card:hover {
+    transform: translateX(8px);
+    background: white;
+    border-color: #43c737;
+}
+
+.timeline-icon {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(145deg, #43c737, #2f60b6);
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: #2c3e50; 
+    justify-content: center;
+    flex-shrink: 0;
 }
 
-.lista-objetivos input[type="checkbox"] {
-    width: 18px;
-    height: 18px;
-    cursor: default;
-    accent-color: #43c737; 
+.timeline-icon i {
+    font-size: 26px;
+    color: white;
 }
 
-.metodologia-texto,
-.instructor-texto {
-    margin: 0;
-    line-height: 1.7; 
-    color: #2c3e50; 
-    font-size: 1rem;
+.timeline-content {
+    flex: 1;
 }
 
-.metodologia-card,
-.instructor-card {
-    max-width: 350px; 
+.timeline-content h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1a2c44;
+}
+
+.timeline-content p {
+    font-size: 0.9rem;
+    color: #4a5568;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.timeline-tag {
+    display: inline-block;
+    background: rgba(67, 199, 55, 0.15);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: #2f60b6;
+    font-weight: 600;
+}
+
+.roadmap-footer {
+    text-align: center;
+    margin-top: 50px;
+    background: rgba(67, 199, 55, 0.2);
+    backdrop-filter: blur(4px);
+    border-radius: 60px;
+    padding: 14px 28px;
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    border: 1px solid rgba(67, 199, 55, 0.5);
+}
+
+.roadmap-footer i {
+    color: #43c737;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.roadmap-footer strong {
+    color: #43c737;
 }
 
 /* ===== FORMULARIOS (CONTACTO) ===== */
@@ -501,6 +576,9 @@ button:hover {
     border-radius: 12px;
     padding: 15px;
     border: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 15px;
+    height: 100%;
+    transition: all 0.3s ease;
 }
 
 .course-list-header {
@@ -509,21 +587,27 @@ button:hover {
     align-items: center;
     color: white;
     cursor: pointer;
-    padding: 5px 0;
+    padding: 8px 12px;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-.course-list-header:hover {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 5px 10px;
-    margin: -5px -10px;
+.course-list-container:hover {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: rgba(76, 214, 62, 0.3);
 }
 
 .course-list-title {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.course-list-title i {
+    font-size: 1.3rem;
 }
 
 .dropdown-icon {
@@ -531,6 +615,10 @@ button:hover {
     color: white;
     font-size: 1.2rem;
 }
+
+.course-list-title i.fa-code { color: #61dafb; }
+.course-list-title i.fa-server { color: #4ecdc4; }
+.course-list-title i.fa-layer-group { color: #ff9ff3; }
 
 .course-list-header.active .dropdown-icon {
     transform: rotate(180deg);
@@ -594,24 +682,20 @@ button:hover {
     font-size: 1.1rem;
 }
 
-.course-list li i.fa-code { color: #61dafb; }
-.course-list li i.fa-robot { color: #ff6b6b; }
-.course-list li i.fa-chart-line { color: #4ecdc4; }
-.course-list li i.fa-database { color: #a8e6cf; }
-.course-list li i.fa-cloud { color: #54a0ff; }
-.course-list li i.fa-mobile-alt { color: #f368e0; }
-.course-list li i.fa-shield-alt { color: #10ac84; }
-.course-list li i.fa-project-diagram { color: #ff9ff3; }
-.course-list li i.fa-cube { color: #64b5f6; }
-.course-list li i.fa-vr-cardboard { color: #ce93d8; }
-.course-list li i.fa-microchip { color: #81c784; }
-.course-list li i.fa-palette { color: #ffb74d; }
-.course-list li i.fa-tasks { color: #4fc3f7; }
-.course-list li i.fa-calculator { color: #aed581; }
-.course-list li i.fa-language { color: #ff8a65; }
+.course-list li i.fab.fa-html5 { color: #e44d26; }
+.course-list li i.fab.fa-css3-alt { color: #264de4; }
+.course-list li i.fab.fa-react { color: #61dafb; }
+.course-list li i.fab.fa-vuejs { color: #42b883; }
+.course-list li i.fab.fa-angular { color: #dd0031; }
+.course-list li i.fab.fa-bootstrap { color: #7952b3; }
+.course-list li i.fab.fa-figma { color: #f24e1e; }
+.course-list li i.fab.fa-node { color: #339933; }
 .course-list li i.fab.fa-python { color: #3776ab; }
 .course-list li i.fab.fa-java { color: #b07219; }
-.course-list li i.fab.fa-js { color: #f7df1e; }
+.course-list li i.fas.fa-database { color: #4ecdc4; }
+.course-list li i.fas.fa-cloud { color: #54a0ff; }
+.course-list li i.fas.fa-code-branch { color: #f39c12; }
+.course-list li i.fas.fa-layer-group { color: #9b59b6; }
 
 /* ===== EQUIPO ===== */
 
@@ -1480,21 +1564,24 @@ button:hover {
     .blog-content h3 {
         font-size: 20px;
     }
+
+   
     
+   @media (max-width: 768px) {
     .course-list-title {
-        font-size: 1.2rem;
-    }
-    
-    .course-list li {
-        padding: 10px 12px;
-        font-size: 0.9rem;
-    }
-    
-    .course-list li i {
-        margin-right: 10px;
-        width: 20px;
         font-size: 1rem;
     }
+    
+     .course-list li {
+        font-size: 0.9rem;
+        padding: 10px 12px;
+    }
+    
+     .course-list li i {
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+}
     
     .course-list:not(.collapsed) {
         max-height: 300px;
