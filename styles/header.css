@@ -1,21 +1,8 @@
-body {
-    min-height: 100vh;
-    margin: 0;
-    background: linear-gradient(
-        145deg,
-        #43c737 0%,
-        #2f60b6 30%,
-        #223e75 100%
-    );
-}
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 .logo-text {
     color: #e8ebe6;
