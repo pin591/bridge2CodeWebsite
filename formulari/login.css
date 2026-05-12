@@ -77,9 +77,7 @@ a {
     margin-top: 8px;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+
 
 button[type="submit"] {
     margin-top: 40px;
@@ -96,4 +94,19 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #6bb3a7;
-}   
+}  
+
+#mensajeExito {
+    position: fixed; 
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #559d91;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
