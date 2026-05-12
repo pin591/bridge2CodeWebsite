@@ -18,3 +18,13 @@ togglePassword.addEventListener('click', () => {
     }
 
 });
+
+loginForm.addEventListener('submit', (event) => {
+    event.preventDefault(); 
+    
+    mensajeExito.classList.remove('hidden'); 
+
+    setTimeout(() => {
+        mensajeExito.classList.add('hidden');
+    }, 2000);
+});
