@@ -52,8 +52,8 @@ input::placeholder {
 }
 
 .password-wrapper input {
-    padding-right: 50px; 
-    margin-bottom: 0;    
+    padding-right: 50px;
+    margin-bottom: 0;
 }
 
 .toggle-password {
@@ -67,24 +67,21 @@ input::placeholder {
     font-size: 18px;
 }
 
-
 a {
     display: block;
-    text-align: right;   
-    color: white;        
+    text-align: right;
+    color: white;
     text-decoration: none;
     font-size: 14px;
     margin-top: 8px;
 }
-
-
 
 button[type="submit"] {
     margin-top: 40px;
     padding: 12px 80px;
     border: none;
     border-radius: 10px;
-    background-color: #559d91; /
+    background-color: #559d91;
     color: #1a1a1a;
     font-weight: bold;
     font-size: 16px;
@@ -94,7 +91,8 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background-color: #6bb3a7;
-}  
+}
+
 
 #mensajeExito {
     position: fixed; 
@@ -102,6 +100,17 @@ button[type="submit"]:hover {
     left: 50%;
     transform: translateX(-50%);
     background: #559d91;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+#mensajeError {
+    position: fixed; 
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: red;
     padding: 10px 20px;
     border-radius: 5px;
     z-index: 100;

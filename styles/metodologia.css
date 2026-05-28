@@ -1,0 +1,345 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* ===== HEADER & NAV ===== */
+header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav {
+    margin-bottom: 0;
+}
+
+.nav-button,
+.nav-button-active {
+    margin: 0 6px;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    transition: all 0.3s;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.nav-button-active {
+    background-color: rgba(73, 73, 73, 0.2);
+    color: rgb(0, 0, 0);
+}
+
+/* ===== METODOLOGÍA — HEADER ===== */
+.meto-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.meto-header h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.meto-header p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.3rem;
+}
+
+.meto-header .meto-badge {
+    display: inline-block;
+    background: rgba(67, 199, 55, 0.2);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: #43c737;
+    margin-bottom: 20px;
+    border: 1px solid rgba(67, 199, 55, 0.3);
+}
+
+/* ===== METODOLOGÍA — TARJETAS PRINCIPALES ===== */
+.meto-card {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(10px);
+    border-radius: 24px;
+    padding: 35px;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.meto-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.meto-card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(67, 199, 55, 0.3);
+    padding-bottom: 15px;
+}
+
+.meto-card-icon {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, #43c737, #2f60b6);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: white;
+}
+
+.meto-card-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #1e2f4d;
+    font-weight: 700;
+}
+
+.meto-card-content {
+    color: #2c3e50;
+    line-height: 1.7;
+}
+
+/* ===== METODOLOGÍA — HIGHLIGHT ===== */
+.meto-highlight {
+    background: linear-gradient(135deg, rgba(67, 199, 55, 0.1), rgba(47, 96, 182, 0.1));
+    padding: 20px;
+    border-radius: 16px;
+    margin: 20px 0;
+    border-left: 4px solid #43c737;
+}
+
+/* ===== METODOLOGÍA — CHECK LIST ===== */
+.meto-check-list {
+    list-style: none;
+    padding: 0;
+}
+
+.meto-check-list li {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.meto-check-list li i {
+    color: #43c737;
+    font-size: 18px;
+    width: 24px;
+}
+
+/* ===== METODOLOGÍA — FASES (RUTA DE APRENDIZAJE) ===== */
+.meto-phases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.meto-phase-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(67, 199, 55, 0.2);
+}
+
+.meto-phase-card:hover {
+    transform: translateY(-8px);
+    background: white;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: #43c737;
+}
+
+.meto-phase-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #43c737, #2f60b6);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.meto-phase-card h3 {
+    color: #1e2f4d;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.meto-phase-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* ===== METODOLOGÍA — RECURSOS ===== */
+.meto-resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.meto-resource-item {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.meto-resource-item:hover {
+    background: white;
+    transform: translateX(5px);
+    border-color: rgba(67, 199, 55, 0.5);
+}
+
+.meto-resource-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(67, 199, 55, 0.15);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #43c737;
+    flex-shrink: 0;
+}
+
+.meto-resource-text h4 {
+    color: #1e2f4d;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.meto-resource-text p {
+    color: #4a5568;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: 80px;
+    padding: 50px 20px 20px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer h3,
+.footer h5 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    max-width: 300px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #43c737;
+}
+
+.footer-social .social-icons a {
+    font-size: 22px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    nav,
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .meto-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .meto-phases-grid,
+    .meto-resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .meto-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .meto-card {
+        padding: 20px;
+    }
+}
