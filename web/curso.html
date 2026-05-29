@@ -20,6 +20,7 @@
                 <div class="d-flex align-items-center justify-content-between">
                     <a href="index.html" class="d-flex align-items-center text-decoration-none">
                         <i class="fas fa-shield-halved" style="font-size: 2.5rem; color: white; margin-right: 10px;"></i>
+                        <i class="fas fa-shield-halved" style="font-size: 2.5rem; color: white; margin-right: 10px;"></i>
                         <span class="logo-text">Code2Bridge</span>
                     </a>
 
@@ -30,20 +31,25 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-button-active" href="curso.html">Cursos</a>
+                                <a class="nav-button-active" href="curso.html">Cursos</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-button" href="metodologia.html">Metodologia</a>
                                 <a class="nav-button" href="metodologia.html">Metodologia</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-button" href="sobrenosotros.html">Sobre Nosotros</a>
+                                <a class="nav-button" href="sobrenosotros.html">Sobre Nosotros</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-button" href="contacto.html">Contacto</a>
                                 <a class="nav-button" href="contacto.html">Contacto</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-button" href="#">Recursos gratis</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-button" href="login.html">Login/Sign in</a>
                                 <a class="nav-button" href="login.html">Login/Sign in</a>
                             </li>
                         </ul>
@@ -56,16 +62,271 @@
                 </div>
             </header>
        
+       
             <section class="blog-section py-5">
                 <h2 class="text-center text-white mb-4 parallax-title">Nuestros Cursos</h2>
                 <p class="text-center text-white mb-5" style="opacity: 0.8;">Haz clic en cualquier curso para ver más detalles</p>
+                <h2 class="text-center text-white mb-4 parallax-title">Nuestros Cursos</h2>
+                <p class="text-center text-white mb-5" style="opacity: 0.8;">Haz clic en cualquier curso para ver más detalles</p>
                 <div class="row justify-content-center">
+                    <div class="col-md-10">
                     <div class="col-md-10">
                         <div class="blog-card parallax-card curso-completo" data-speed="0.3">
                             <div class="parallax-image-container">
                                 <div class="blog-image parallax-image" style="background-image: url('/resources/pc.jpg')" data-speed="0.5"></div>
                             </div>
                             <div class="blog-content">
+                                <span class="blog-tag">🔥 Especialización Completa</span>
+                                <h3>Protege tu equipo de ciberataques</h3>
+                        
+                                <div class="row mt-4">
+                                    <!-- Columna Frontend -->
+                                    <div class="col-md-6">
+                                        <div class="course-list-container">
+                                            <div class="course-list-header" onclick="toggleCourseList(this)">
+                                                <h4 class="course-list-title">
+                                                    <i class="fas fa-code"></i> Frontend Development
+                                                </h4>
+                                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                                            </div>
+                                            <ul class="course-list collapsed">
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-js"></i> JavaScript Moderno (ES6+)
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Domina las características más avanzadas de JavaScript: Promesas, Async/Await, módulos ES6, destructuración, operador spread y mucho más. Ideal para crear aplicaciones web modernas y escalables.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-react"></i> React.js y Hooks
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Aprende a construir interfaces de usuario interactivas con React. Incluye: componentes funcionales, useState, useEffect, Context API, React Router y optimización de rendimiento.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-vuejs"></i> Vue.js Framework
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Descubre Vue.js, el framework progresivo. Aprende su sistema de reactividad, componentes de un solo archivo, Vue Router, Pinia para estado global y composición API.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-angular"></i> Angular 15+
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Desarrolla aplicaciones empresariales con Angular. Aprende TypeScript, módulos, componentes, servicios, inyección de dependencias, RxJS y PWA con Angular.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-bootstrap"></i> Bootstrap & Tailwind CSS
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Domina los frameworks CSS más populares. Bootstrap para prototipado rápido y Tailwind CSS para diseño personalizado con utilidades. Layouts responsivos en minutos.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-mobile-alt"></i> Diseño Responsive y PWA
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Aprende a crear sitios que funcionen perfectamente en cualquier dispositivo. Incluye: media queries, flexbox, grid, diseño mobile-first y Progressive Web Apps.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-figma"></i> UI/UX con Figma
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Diseña interfaces profesionales con Figma. Aprende prototipado, sistemas de diseño, componentes, autolayout, variantes y colaboración en equipo para proyectos reales.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-chart-line"></i> Performance Web
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Optimiza la velocidad y experiencia de usuario. Técnicas: lazy loading, code splitting, optimización de imágenes, caching, Core Web Vitals y métricas reales.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-palette"></i> Animaciones CSS Avanzadas
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Crea experiencias visuales impactantes con CSS. Transformaciones, transiciones, keyframes, animaciones con scroll, efectos 3D y librerías como GSAP.</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <!-- Columna Backend -->
+                                    <div class="col-md-6">
+                                        <div class="course-list-container">
+                                            <div class="course-list-header" onclick="toggleCourseList(this)">
+                                                <h4 class="course-list-title">
+                                                    <i class="fas fa-server"></i> Backend Development
+                                                </h4>
+                                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                                            </div>
+                                            <ul class="course-list collapsed">
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-python"></i> Python y Django/Flask
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Desarrolla aplicaciones backend robustas con Python. Incluye: Django para proyectos grandes con ORM, autenticación y admin panel, o Flask para APIs ligeras y microservicios.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-node"></i> Node.js y Express
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">JavaScript en el servidor. Aprende Node.js, Express, middleware, autenticación JWT, websockets con Socket.io y despliegue en la nube. Ideal para full-stack JavaScript.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fab fa-java"></i> Java Spring Boot
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Construye aplicaciones empresariales con Spring Boot. Inversión de control, Spring Security, JPA/Hibernate, microservicios con Spring Cloud y pruebas unitarias.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-database"></i> Bases de Datos SQL y NoSQL
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Domina PostgreSQL, MySQL, MongoDB y Redis. Modelado de datos, índices, consultas optimizadas, transacciones, replicación y estrategias de caché para alto rendimiento.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-cloud"></i> Cloud Computing (AWS, Azure)
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Despliega aplicaciones en la nube. Servicios: EC2, S3, Lambda, RDS, VPC. Aprende infraestructura como código con Terraform y CI/CD en la nube.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-shield-alt"></i> Ciberseguridad Backend
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Protege tus aplicaciones de amenazas. OWASP Top 10, prevención de inyección SQL, XSS, CSRF, autenticación segura, cifrado de datos y buenas prácticas.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-code-branch"></i> APIs RESTful y GraphQL
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Diseña APIs profesionales. REST con buenas prácticas, versionado, documentación con Swagger y GraphQL con Apollo Server. Testing y rate limiting.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-cube"></i> Microservicios y Docker
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Arquitectura de microservicios con Docker. Contenerización, docker-compose, comunicación entre servicios, service discovery, API Gateway y orquestación básica.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-project-diagram"></i> Arquitectura de Software
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Patrones y principios de diseño. SOLID, MVC, hexagonal, clean architecture, CQRS, event sourcing. Toma decisiones arquitectónicas para proyectos escalables.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-tasks"></i> DevOps y CI/CD
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Automatiza todo el ciclo de vida del software. Git, GitHub Actions, Jenkins, pruebas automatizadas, despliegue continuo, monitoreo con Prometheus y Grafana.</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tercera columna -->
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <div class="course-list-container">
+                                            <div class="course-list-header" onclick="toggleCourseList(this)">
+                                                <h4 class="course-list-title">
+                                                    <i class="fas fa-layer-group"></i> Full Stack & Tecnologías Adicionales
+                                                </h4>
+                                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                                            </div>
+                                            <ul class="course-list collapsed">
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-robot"></i> Inteligencia Artificial y Machine Learning
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Introducción a IA/ML con Python. TensorFlow, scikit-learn, redes neuronales, clasificación, regresión, clustering y NLP. Proyectos prácticos con datasets reales.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-chart-pie"></i> Big Data y Business Intelligence
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Procesa grandes volúmenes de datos. Hadoop, Spark, Hive. Visualización con Power BI y Tableau. Dashboards interactivos para toma de decisiones empresariales.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-vr-cardboard"></i> Realidad Virtual y Aumentada
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Crea experiencias inmersivas con A-Frame, Three.js y Unity. Desarrollo de aplicaciones RV/RA para web y dispositivos móviles. Conceptos de 3D interactivo.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-microchip"></i> Internet de las Cosas (IoT)
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Conecta dispositivos al mundo digital. Arduino, ESP32, sensores, MQTT, integración con servicios cloud. Proyectos prácticos de domótica y monitoreo remoto.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-link"></i> Blockchain y Web3
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Desarrolla aplicaciones descentralizadas. Ethereum, smart contracts con Solidity, Web3.js, NFTs, DeFi. Conexión con wallets y despliegue en testnet.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-chart-line"></i> Marketing Digital y SEO
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Posiciona tu proyecto en buscadores. SEO on-page y off-page, Google Analytics, Search Console, estrategias de contenido, backlinks y optimización para conversiones.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-calculator"></i> Finanzas para Tech Emprendedores
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Gestiona las finanzas de tu startup tech. Modelos de negocio SaaS, métricas clave (MRR, CAC, LTV), fundraising, valoración de empresas y gestión de inversión.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-language"></i> Inglés Técnico para Programadores
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Mejora tu inglés enfocado en tecnología. Vocabulario técnico, documentación, entrevistas en inglés, comunicación en equipos internacionales y reading comprehension.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-users"></i> Metodologías Ágiles (Scrum, Kanban)
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Trabaja en equipo con agilidad. Scrum: roles, ceremonias, artefactos. Kanban: tableros, WIP, métricas. Herramientas como Jira y Trello para gestión de proyectos.</div>
+                                                </li>
+                                                <li class="course-item">
+                                                    <div class="course-title" onclick="toggleDescription(event, this)">
+                                                        <i class="fas fa-certificate"></i> Certificaciones Profesionales IT
+                                                        <i class="fas fa-chevron-down toggle-icon"></i>
+                                                    </div>
+                                                    <div class="course-description">Prepárate para certificaciones reconocidas: AWS Certified, CompTIA, CISSP, Scrum Master, Google IT Support. Simulacros de examen y guías de estudio completas.</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                                 <span class="blog-tag">🔥 Especialización Completa</span>
                                 <h3>Protege tu equipo de ciberataques</h3>
                         
@@ -326,6 +587,8 @@
     </div>
 
     <footer class="footer">
+
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-brand">
                 <h3>Code2Bridge</h3>
@@ -362,12 +625,15 @@
         </div>
     </footer>
 
+
     <script>
+        // Función para colapsar/expandir categorías de cursos
         // Función para colapsar/expandir categorías de cursos
         function toggleCourseList(header) {
             var courseList = header.nextElementSibling;
             
             if (!courseList) {
+                console.error("Error: No se encontró la lista");
                 console.error("Error: No se encontró la lista");
                 return;
             }
@@ -376,16 +642,39 @@
             const isCollapsed = courseList.classList.contains('collapsed');
             
             if (isCollapsed) {
+            // Toggle collapsed class
+            const isCollapsed = courseList.classList.contains('collapsed');
+            
+            if (isCollapsed) {
                 courseList.classList.remove('collapsed');
                 header.classList.add('active');
+            } else {
             } else {
                 courseList.classList.add('collapsed');
                 header.classList.remove('active');
             }
             
             // Rotate icon
+            // Rotate icon
             var icon = header.querySelector('.dropdown-icon');
             if (icon) {
+                icon.style.transform = isCollapsed ? 'rotate(180deg)' : 'rotate(0deg)';
+            }
+        }
+
+        // Función para mostrar/ocultar descripción de cada curso
+        function toggleDescription(event, element) {
+            event.stopPropagation();
+            
+            // Encontrar el contenedor del curso
+            const courseItem = element.closest('.course-item');
+            const description = courseItem.querySelector('.course-description');
+            
+            // Toggle show class en la descripción
+            description.classList.toggle('show');
+            
+            // Toggle active class en el título para rotar el icono
+            element.classList.toggle('active');
                 icon.style.transform = isCollapsed ? 'rotate(180deg)' : 'rotate(0deg)';
             }
         }
@@ -422,7 +711,28 @@
                     icon.style.transform = 'rotate(0deg)';
                 }
             });
+            });
             
+            // Asegurar que todas las descripciones de cursos estén ocultas al inicio
+            document.querySelectorAll('.course-description').forEach(desc => {
+                desc.classList.remove('show');
+            });
+            
+            // Asegurar que todos los títulos de cursos estén sin la clase active
+            document.querySelectorAll('.course-title').forEach(title => {
+                title.classList.remove('active');
+            });
+            
+            // Prevenir propagación de clics en items de la lista
+            document.querySelectorAll('.course-item').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Evita que el click cierre el dropdown de categoría
+                    console.log('Curso seleccionado:', this.querySelector('.course-title').textContent.trim());
+                    // Aquí puedes agregar: redirigir, mostrar modal, etc.
+                    // Ejemplo: window.location.href = "/curso/" + encodeURIComponent(this.textContent.trim());
+                });
+            });
+        });
             // Asegurar que todas las descripciones de cursos estén ocultas al inicio
             document.querySelectorAll('.course-description').forEach(desc => {
                 desc.classList.remove('show');
