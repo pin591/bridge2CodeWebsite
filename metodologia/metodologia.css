@@ -8,34 +8,50 @@
 
 
 /* ===== HEADER & NAV ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(145deg, #43c737 0%, #2f60b6 30%, #223e75 100%);
+}
+
 header {
-    padding: 20px;
+    padding: 14px 20px;
 }
 
 nav {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex: 1;               
+    justify-content: center;
 }
 
 .nav {
     margin-bottom: 0;
+    flex-wrap: nowrap !important;
 }
 
 .nav-button,
 .nav-button-active {
-    margin: 0 6px;
+    margin: 0 2px;
     text-decoration: none;
-    color: rgb(8, 8, 8);
+    color: rgb(250, 249, 249);
+    font-size: 0.82rem;
     transition: all 0.3s;
+    white-space: nowrap;
     font-weight: 500;
-    padding: 8px 12px;
+    padding: 6px 8px;
     border-radius: 8px;
 }
 
 .nav-button-active {
-    background-color: rgba(73, 73, 73, 0.2);
-    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 /* ===== METODOLOGÍA — HEADER ===== */

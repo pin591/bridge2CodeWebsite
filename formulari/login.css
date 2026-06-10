@@ -6,18 +6,94 @@
 }
 
 body {
-    background: linear-gradient(135deg, #2b1055, #124a5b);
-    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(145deg, #43c737 0%, #2f60b6 30%, #223e75 100%);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     color: white;
     text-align: center;
 }
 
+/* ===== HEADER / NAV ===== */
+header {
+    padding: 14px 20px;
+}
+
+header > div {
+    flex-wrap: nowrap;
+    gap: 12px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav {
+    margin-bottom: 0;
+    flex-wrap: nowrap !important;
+}
+
+.nav-button,
+.nav-button-active {
+    margin: 0 2px;
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+    transition: all 0.3s;
+    font-weight: 500;
+    padding: 6px 8px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+}
+
+.nav-button-active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.social-icons {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.social-icons a {
+    color: white;
+    margin-left: 12px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+/* ===== MAIN / LOGIN ===== */
 main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
     width: 90%;
     max-width: 500px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -81,8 +157,8 @@ button[type="submit"] {
     padding: 12px 80px;
     border: none;
     border-radius: 10px;
-    background-color: #559d91;
-    color: #1a1a1a;
+    background-color: #43c737;
+    color: white;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
@@ -90,30 +166,28 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #6bb3a7;
+    background-color: #35a52b;
 }
 
-
-#mensajeExito {
-    position: fixed; 
+/* ===== MENSAJES ===== */
+#mensajeExito,
+#mensajeError {
+    position: fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: #559d91;
     padding: 10px 20px;
     border-radius: 5px;
     z-index: 100;
+    font-weight: 600;
+}
+
+#mensajeExito {
+    background: #43c737;
 }
 
 #mensajeError {
-    position: fixed; 
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: red;
-    padding: 10px 20px;
-    border-radius: 5px;
-    z-index: 100;
+    background: #e74c3c;
 }
 
 .hidden {

@@ -1,0 +1,341 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BODY / FONDO ===== */
+body {
+  min-height: 100vh;
+  /* Degradado igual al de la foto: azul medianoche → azul marino → azul petróleo */
+  background: linear-gradient(135deg, #0d1b3e 0%, #0e2a52 35%, #0e3a5c 65%, #0a3048 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER / NAV ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(145deg, #43c737 0%, #2f60b6 30%, #223e75 100%);
+}
+
+header {
+    padding: 14px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;               
+    justify-content: center;
+}
+
+.nav {
+    margin-bottom: 0;
+    flex-wrap: nowrap !important;
+}
+
+.nav-button,
+.nav-button-active {
+    margin: 0 2px;
+    text-decoration: none;
+    color: rgb(250, 249, 249);
+    font-size: 0.82rem;
+    transition: all 0.3s;
+    white-space: nowrap;
+    font-weight: 500;
+    padding: 6px 8px;
+    border-radius: 8px;
+}
+
+.nav-button-active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+
+/* ===== MAIN ===== */
+main {
+  flex: 1;
+  padding: 0 24px 24px;
+}
+
+/* ===== CALENDAR WRAPPER ===== */
+.calendar-wrapper {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ===== CALENDAR HEADER ===== */
+.cal-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.btn-today {
+  background: #fff;
+  color: #1a1a3e;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 6px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.week-label {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.btn-reprog {
+  background: #7c6fff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-reprog:hover {
+  background: #6a5dee;
+}
+
+.btn-view {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-view.active {
+  background: #fff;
+  color: #1a1a3e;
+  border-color: #fff;
+  font-weight: 500;
+}
+
+.btn-view:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== CALENDAR GRID ===== */
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+/* ===== DAY COLUMN ===== */
+.day-col {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 8px;
+  min-height: 300px;
+}
+
+.day-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.day-name {
+  font-size: 11px;
+  color: #888;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.day-num {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a3e;
+}
+
+/* ===== LESSON CARDS ===== */
+.lesson-card {
+  background: #f5f6f8;
+  border-radius: 8px;
+  padding: 7px 8px;
+  margin-bottom: 7px;
+  border: 0.5px solid #e8eaed;
+  overflow: hidden;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8eaf6;
+  color: #5c5faa;
+  font-size: 9px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 1px 5px;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+
+.tag.speaking {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.lesson-time {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1a1a3e;
+  line-height: 1.2;
+}
+
+.lesson-sub {
+  font-size: 10px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.dot-done {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #4caf50;
+  border-radius: 50%;
+  float: right;
+  margin-top: 2px;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: 80px;
+    padding: 50px 20px 20px;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer h3,
+.footer h5 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    max-width: 300px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 8px 0;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #43c737;
+}
+
+.footer-social .social-icons a {
+    font-size: 22px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    nav,
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .meto-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .meto-phases-grid,
+    .meto-resources-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .meto-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .meto-card {
+        padding: 20px;
+    }
+}

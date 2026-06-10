@@ -1,5 +1,4 @@
 const emailInput = document.querySelector('input[name="email"]');
-
 if (emailInput) {
     emailInput.style.border = '2px solid yellow';
 }
@@ -8,7 +7,7 @@ const togglePassword = document.querySelector('.toggle-password');
 const passwordInput = document.querySelector('input[name="password"]');
 
 togglePassword.addEventListener('click', () => {
-    if (passwordInput.type == 'password') {
+    if (passwordInput.type === 'password') {
         passwordInput.type = 'text';
         togglePassword.textContent = '👀';
     } else {
@@ -17,81 +16,28 @@ togglePassword.addEventListener('click', () => {
     }
 });
 
-
-
-loginForm.addEventListenerTest('submit', (event) => {
-    event.preventDefault(); 
-
-    
-    const email = loginForm.email.value;
-    const password = loginForm.password.value;
-    const newDiv = document.createElement("div");
-
-    if (email == 'admin@gmail.com' && password == '1234') {
-        newDiv.textContent= mensajeExito
-
-        setTimeout(() => {
-            newDiv.classList.add('hidden');
-        }, 2000);
-
-    } else {
-        newDiv.textContent= mensajeError
-        setTimeout(() => {
-            newDiv.classList.add('hidden');
-        }, 2000);
-
-    }
-    document.body.appendChild(nuevoDiv);
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const loginForm = document.getElementById('loginForm');
+const mensajeExito = document.getElementById('mensajeExito');
+const mensajeError = document.getElementById('mensajeError');
 
 loginForm.addEventListener('submit', (event) => {
-    event.preventDefault(); 
+    event.preventDefault();
 
-    
     const email = loginForm.email.value;
     const password = loginForm.password.value;
 
-    
     mensajeExito.classList.add('hidden');
     mensajeError.classList.add('hidden');
 
-    
-    if (email == 'admin@gmail.com' && password == '1234') {
-        mensajeError.classList.remove('hidden');
-        
+    if (email === 'admin@gmail.com' && password === '1234') {
+        mensajeExito.classList.remove('hidden');
         setTimeout(() => {
             mensajeExito.classList.add('hidden');
         }, 2000);
-
     } else {
-        mensajeExito.classList.remove('hidden');
-
+        mensajeError.classList.remove('hidden');
         setTimeout(() => {
             mensajeError.classList.add('hidden');
         }, 2000);
     }
 });
-
